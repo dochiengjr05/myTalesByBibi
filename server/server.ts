@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import { orderService, subscriberService, contactService } from "./database.js";
+import { sendOrderNotification } from './email.js';
 
 const app = express();
 const PORT = process.env.PORT || 8081;
@@ -23,9 +24,19 @@ app.get('/api/health', (req, res) => {
 });
 
 // Order endpoints
-app.post('/api/orders', (req, res) => {
+app.post('/api/orders', async (req, res) => {
   try {
     const result = orderService.createOrder(req.body);
+    
+    // Send email notification
+    try {
+      await sendOrderNotification(req.body);
+      console.log('Email notification sent for order:', result.lastInsertRowid);
+    } catch (emailError) {
+      console.error('Failed to send email notification:', emailError);
+      // Don't fail the order if email fails
+    }
+    
     res.status(201).json({ 
       success: true, 
       orderId: result.lastInsertRowid,
