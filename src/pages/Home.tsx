@@ -88,56 +88,53 @@ export default function Home() {
             Meet the Three Siblings
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Zebra */}
+            {/* Milia */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
               <div className="w-full h-80 bg-white flex items-center justify-center">
                 <img
                   src="/images/zebra.png"
-                  alt="Zebra"
+                  alt="Milia"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-display font-bold text-earth mb-2">The Zebra</h3>
+                <h3 className="text-2xl font-display font-bold text-earth mb-2">Milia</h3>
                 <p className="text-gray-700">
-                  Bold and free-spirited, the zebra chose the wild path, earning his beautiful 
-                  stripes through courage and adventure.
+                  Bold and free-spirited, Zebra loves to zigzag across the wild with his wildebeest and buffalo friends. With curious eyes and happy hooves, he sometimes trots along on their great migration, turning the journey between Tanzania and Kenya into one big adventure.
                 </p>
               </div>
             </div>
 
-            {/* Donkey */}
+            {/* Punda */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
               <div className="w-full h-80 bg-white flex items-center justify-center">
                 <img
                   src="/images/donkey.png"
-                  alt="Donkey"
+                  alt="Punda"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-display font-bold text-earth mb-2">The Donkey</h3>
+                <h3 className="text-2xl font-display font-bold text-earth mb-2">Punda</h3>
                 <p className="text-gray-700">
-                  Loyal and hardworking, the donkey found purpose in helping others, 
-                  becoming a beloved companion to humans.
+                  Loyal and hardworking, Donkey loves helping others and soon finds himself a treasured friend to humans. With gentle steps and a big heart, he happily lends a hoof wherever he's needed.
                 </p>
               </div>
             </div>
 
-            {/* Horse */}
+            {/* Farasi */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-200">
               <div className="w-full h-80 bg-white flex items-center justify-center">
                 <img
                   src="/images/horse.png"
-                  alt="Horse"
+                  alt="Farasi"
                   className="w-full h-full object-contain"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-display font-bold text-earth mb-2">The Horse</h3>
+                <h3 className="text-2xl font-display font-bold text-earth mb-2">Farasi</h3>
                 <p className="text-gray-700">
-                  Graceful and noble, the horse discovered strength in partnership, 
-                  bringing joy and service to human families.
+                  Graceful and noble, Horse loves to run, race, and show off her strength in friendly competition. With a joyful spirit and a caring heart, she brings excitement, help, and happiness to the human families who welcome her.
                 </p>
               </div>
             </div>

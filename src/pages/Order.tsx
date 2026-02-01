@@ -129,9 +129,12 @@ export default function Order() {
               
               <div className="bg-grass-light rounded-lg p-6 border-l-4 border-grass">
                 <h3 className="font-display font-bold text-earth mb-2">Bulk Orders</h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 mb-2">
                   Schools, libraries, and organizations: Contact us for special bulk pricing 
                   and educational resources.
+                </p>
+                <p className="text-gray-700">
+                  Email us at: <a href="mailto:talesbybibi@gmail.com" className="text-sunset font-semibold hover:underline">talesbybibi@gmail.com</a>
                 </p>
               </div>
             </div>

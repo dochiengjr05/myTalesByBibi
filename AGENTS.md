@@ -112,3 +112,45 @@ All endpoints return JSON with `{ success: boolean, ... }` format.
 - Mobile menu button in Navbar is not functional (visual only)
 - No authentication/authorization implemented for admin endpoints
 - Images should be placed in `public/images/` and referenced as `/images/filename.png`
+
+## Production Deployment
+
+### Server Information
+- **Hosting**: Digital Ocean Droplet (IP: 46.101.83.94)
+- **Live Site**: https://talesbybibi.com
+- **Web Server**: Nginx with SSL (Let's Encrypt)
+- **Process Manager**: PM2
+- **Active Repository**: git@github.com:dochiengjr05/myTalesByBibi.git
+- **Server Location**: `/root/myTalesByBibi`
+- **Nginx Serves From**: `/var/www/talesbybibi`
+
+### Deployment Workflow
+
+1. **Make changes locally** in this repository
+2. **SSH to droplet**: `ssh root@46.101.83.94`
+3. **Navigate to repository**: `cd ~/myTalesByBibi`
+4. **Pull changes**: `git pull origin main`
+5. **Build application**:
+   ```bash
+   npm run build          # Frontend
+   npm run build:server   # Backend
+   ```
+6. **Deploy frontend**: `cp -r ~/myTalesByBibi/dist/* /var/www/talesbybibi/`
+7. **Restart services**:
+   ```bash
+   pm2 restart talesbybibi-api
+   nginx -t && systemctl reload nginx
+   ```
+
+### Quick Deploy Command
+```bash
+cd ~/myTalesByBibi && git pull origin main && npm install && npm run build && npm run build:server && cp -r dist/* /var/www/talesbybibi/ && pm2 restart talesbybibi-api && nginx -t && systemctl reload nginx
+```
+
+### Important Notes
+- The old repository at `~/talesbybibi` is deprecated - DO NOT USE
+- Always work from `~/myTalesByBibi` (the new repository)
+- Frontend changes require rebuilding and copying to nginx directory
+- Backend changes require PM2 restart after building
+- PM2 process name: `talesbybibi-api`
+- See `DEPLOYMENT.md` for detailed deployment documentation
