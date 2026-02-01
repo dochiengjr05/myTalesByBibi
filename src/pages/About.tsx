@@ -27,27 +27,27 @@ export default function About() {
           
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              In Swahili, <strong className="text-sunset">"Bibi"</strong> means grandmother — 
-              the wise elder, the keeper of stories, the heart of the family.
+              In Swahili, <strong className="text-sunset">"Bibi"</strong> means grandmother. 
+              The wise elder, the keeper of stories, the heart of the family.
             </p>
             
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               For countless generations across Africa, grandmothers have been the storytellers, 
               gathering children around flickering fires as darkness falls over the savannah. 
-              Under starlit skies, they weave tales of wisdom, adventure, and wonder — stories 
+              Under starlit skies, they weave tales of wisdom, adventure, and wonder. Stories 
               that teach, inspire, and connect us to our roots.
             </p>
             
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              These magical evenings by the fireplace were more than entertainment. They were 
-              lessons wrapped in wonder, morals hidden in adventure, and cultural heritage 
-              passed down through the gentle voice of Bibi.
+              These magical evenings sitting around the three stone fire were more than entertainment. 
+              While bibi cooked, she narrated stories that were lessons wrapped in wonder, morals 
+              hidden in adventure and cultural heritage.
             </p>
             
             <div className="bg-sand-light border-l-4 border-sunset p-6 my-8 rounded-r-lg">
               <p className="text-lg text-gray-700 italic">
-                "Around the fire, under the stars, Bibi's voice brought our world to life — 
-                teaching us about courage, kindness, and the bonds that tie all living things together."
+                "Around the fire, under the stars, Bibi's voice brought our world to life. 
+                Teaching us about courage, kindness, and the bonds that tie all living things together."
               </p>
             </div>
           </div>

@@ -21,25 +21,44 @@ export default function Order() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the data to your backend
-    console.log('Order submitted:', formData);
-    setSubmitted(true);
     
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        address: '',
-        city: '',
-        country: '',
-        quantity: 1,
+    try {
+      // Send order to backend API
+      const response = await fetch('http://localhost:8081/api/orders', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-    }, 3000);
+      
+      if (response.ok) {
+        console.log('Order submitted:', formData);
+        setSubmitted(true);
+        
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          setSubmitted(false);
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            address: '',
+            city: '',
+            country: '',
+            quantity: 1,
+          });
+        }, 3000);
+      } else {
+        console.error('Failed to submit order');
+        alert('Failed to submit order. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting order:', error);
+      alert('Failed to submit order. Please try again.');
+    }
   };
 
   return (
@@ -259,6 +278,23 @@ export default function Order() {
                       </select>
                     </div>
                     
+                    {/* Payment Information */}
+                    <div className="bg-grass-light border-l-4 border-grass p-6 rounded-lg">
+                      <h3 className="font-display font-bold text-earth mb-3 flex items-center">
+                        <Phone className="h-5 w-5 text-sunset mr-2" />
+                        M-PESA Payment
+                      </h3>
+                      <p className="text-gray-700 mb-2">
+                        After submitting your order, please send payment via M-PESA to:
+                      </p>
+                      <p className="text-lg font-bold text-sunset mb-2">
+                        0728934854
+                      </p>
+                      <p className="text-sm text-gray-600">
+                        Amount: KES {850 * formData.quantity} ({formData.quantity} {formData.quantity === 1 ? 'copy' : 'copies'})
+                      </p>
+                    </div>
+                    
                     <button
                       type="submit"
                       className="w-full bg-sunset hover:bg-sunset-dark text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-200 transform hover:scale-105 shadow-lg"
@@ -268,6 +304,9 @@ export default function Order() {
                     
                     <p className="text-sm text-gray-600 text-center">
                       * Required fields. We'll never share your information.
+                    </p>
+                    <p className="text-sm text-gray-600 text-center mt-2">
+                      Order confirmations will be sent to talesbybibi@gmail.com
                     </p>
                   </form>
                 )}

@@ -27,7 +27,7 @@ export default function Authors() {
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 <strong className="text-sunset">Esther and Mercy Ondiek</strong>, two African 
                 sisters, share a profound passion for bringing African stories to life for 
-                children worldwide — a passion cultivated through years of working closely 
+                children worldwide. A passion cultivated through years of working closely 
                 with young minds.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
