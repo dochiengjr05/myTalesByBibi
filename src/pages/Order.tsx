@@ -63,22 +63,6 @@ export default function Order() {
                 Amount: KES 850 (1 copy)
               </p>
             </div>
-            
-            {/* Amazon Link */}
-            <div className="mb-6">
-              <p className="text-gray-700 mb-3 font-semibold">
-                Order from Amazon:
-              </p>
-              <a
-                href="https://www.amazon.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full flex items-center justify-center space-x-3 bg-[#FF9900] hover:bg-[#E88B00] text-white px-8 py-4 rounded-lg text-lg font-bold transition-all duration-200 transform hover:scale-105 shadow-lg"
-              >
-                <ShoppingBag className="h-6 w-6" />
-                <span>Buy on Amazon</span>
-              </a>
-            </div>
           </div>
           
           {/* Bulk Orders Section */}
