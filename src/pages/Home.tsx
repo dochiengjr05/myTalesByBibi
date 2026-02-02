@@ -15,7 +15,7 @@ export default function Home() {
               The Story of Three Wild Siblings
             </p>
             <p className="text-xl text-white/80 max-w-3xl mx-auto mb-8">
-              Have you ever wondered how the zebra got his stripes? Or why horses and 
+              Have you ever wondered how the zebra got his stripes? Or why horses and
               donkeys live with humans while zebras still roam wild and free across the African savannah?
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -56,17 +56,17 @@ export default function Home() {
                 A Tale of Family, Courage & Choice
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Long ago, they were one family. Meet the triplets, a <strong>Zebra</strong>, a 
-                <strong>Donkey</strong>, and a <strong>Horse</strong> — three spirited siblings 
-                who begin life side by side until a sudden twist of fate sends them journeying in 
+                Long ago, they were one family. Meet the triplets, a <strong>Zebra</strong>, a
+                <strong>Donkey</strong>, and a <strong>Horse</strong> — three spirited siblings
+                who begin life side by side until a sudden twist of fate sends them journeying in
                 different directions.
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                As each one follows a unique path, they learn about <strong>courage</strong>, 
+                As each one follows a unique path, they learn about <strong>courage</strong>,
                 <strong> friendship</strong>, and the choices that shape who they will become.
               </p>
               <p className="text-lg text-gray-700 mb-8">
-                A heartwarming tale filled with wonder, adventure, and timeless lessons 
+                A heartwarming tale filled with wonder, adventure, and timeless lessons
                 perfect for young readers who love animal stories and magical "how it all began" adventures.
               </p>
               <Link
