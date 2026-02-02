@@ -56,8 +56,8 @@ export default function Home() {
                 A Tale of Family, Courage & Choice
               </h2>
               <p className="text-lg text-gray-700 mb-6">
-                Long ago, they were one family. Meet the triplets, a <strong>Zebra</strong>, 
-                <strong> Donkey</strong>, and a <strong>Horse</strong> — three spirited siblings 
+                Long ago, they were one family. Meet the triplets, a <strong>Zebra</strong>, a 
+                <strong>Donkey</strong>, and a <strong>Horse</strong> — three spirited siblings 
                 who begin life side by side until a sudden twist of fate sends them journeying in 
                 different directions.
               </p>
