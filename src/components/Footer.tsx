@@ -1,4 +1,4 @@
-import { Heart, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Heart, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -30,20 +30,9 @@ export default function Footer() {
           
           <div>
             <h3 className="text-lg font-display font-bold mb-4">Connect With Us</h3>
-            <div className="flex space-x-4 mb-4">
-              <a href="#" className="text-white/80 hover:text-sunset transition-colors">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-white/80 hover:text-sunset transition-colors">
-                <Instagram className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-white/80 hover:text-sunset transition-colors">
-                <Twitter className="h-6 w-6" />
-              </a>
-            </div>
-            <a href="mailto:info@talesbybibi.com" className="flex items-center space-x-2 text-white/80 hover:text-sunset transition-colors">
+            <a href="mailto:talesbybibi@gmail.com" className="flex items-center space-x-2 text-white/80 hover:text-sunset transition-colors">
               <Mail className="h-5 w-5" />
-              <span>info@talesbybibi.com</span>
+              <span>talesbybibi@gmail.com</span>
             </a>
           </div>
         </div>
