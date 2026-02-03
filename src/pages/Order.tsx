@@ -45,16 +45,6 @@ export default function Order() {
               </div>
             </div>
             
-            {/* Amazon Link */}
-            <div className="mb-6">
-              <Link 
-                to="/coming-soon"
-                className="block w-full bg-sunset hover:bg-sunset-dark text-white font-bold py-4 px-6 rounded-lg text-center transition-colors duration-200 shadow-lg"
-              >
-                Order on Amazon
-              </Link>
-            </div>
-            
             {/* M-PESA Payment Section */}
             <div className="bg-grass-light border-l-4 border-grass p-6 rounded-lg mb-6">
               <h3 className="font-display font-bold text-earth mb-3 flex items-center">
@@ -77,7 +67,7 @@ export default function Order() {
           </div>
           
           {/* Bulk Orders Section */}
-          <div className="bg-grass-light rounded-lg p-6 border-l-4 border-grass">
+          <div className="bg-grass-light rounded-lg p-6 border-l-4 border-grass mb-8">
             <h3 className="text-xl font-display font-bold text-earth mb-3">Bulk Orders</h3>
             <p className="text-gray-700 mb-3">
               Schools, libraries, and organizations: Contact us for special bulk pricing 
@@ -86,6 +76,16 @@ export default function Order() {
             <p className="text-gray-700">
               Email us at: <a href="mailto:talesbybibi@gmail.com" className="text-sunset font-semibold hover:underline">talesbybibi@gmail.com</a>
             </p>
+          </div>
+          
+          {/* Amazon Link */}
+          <div className="bg-white rounded-lg shadow-xl p-6">
+            <Link 
+              to="/coming-soon"
+              className="block w-full bg-sunset hover:bg-sunset-dark text-white font-bold py-4 px-6 rounded-lg text-center transition-colors duration-200 shadow-lg"
+            >
+              Order on Amazon
+            </Link>
           </div>
         </div>
       </section>
