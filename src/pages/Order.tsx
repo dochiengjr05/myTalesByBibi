@@ -1,4 +1,5 @@
 import { ShoppingBag, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Order() {
 
@@ -31,7 +32,7 @@ export default function Order() {
             <h2 className="text-3xl font-display font-bold text-earth mb-4 text-center">
               Hoofbeats & Tails
             </h2>
-            <p className="text-2xl text-sunset font-bold mb-6 text-center">KES 850</p>
+            <p className="text-2xl text-sunset font-bold mb-6 text-center">KES 800</p>
             <p className="text-gray-700 mb-6 text-center">
               The Story of Three Wild Siblings — A heartwarming collection of African 
               folktales, legends, and myths perfect for young readers.
@@ -42,6 +43,16 @@ export default function Order() {
                 <ShoppingBag className="h-5 w-5 text-sunset" />
                 <span>Perfect for ages 6-12</span>
               </div>
+            </div>
+            
+            {/* Amazon Link */}
+            <div className="mb-6">
+              <Link 
+                to="/coming-soon"
+                className="block w-full bg-sunset hover:bg-sunset-dark text-white font-bold py-4 px-6 rounded-lg text-center transition-colors duration-200 shadow-lg"
+              >
+                Order on Amazon
+              </Link>
             </div>
             
             {/* M-PESA Payment Section */}
@@ -60,7 +71,7 @@ export default function Order() {
                 0728934854
               </p>
               <p className="text-sm text-gray-600">
-                Amount: KES 850 (1 copy)
+                Amount: KES 800 (1 copy)
               </p>
             </div>
           </div>
