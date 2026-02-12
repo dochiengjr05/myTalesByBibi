@@ -1,5 +1,4 @@
 import { ShoppingBag, Phone } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 export default function Order() {
 
@@ -80,12 +79,14 @@ export default function Order() {
           
           {/* Amazon Link */}
           <div className="bg-white rounded-lg shadow-xl p-6">
-            <Link 
-              to="/coming-soon"
+            <a 
+              href="https://www.amazon.com/Hoofbeats-Tails-Story-Three-Siblings/dp/1990093981"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block w-full bg-sunset hover:bg-sunset-dark text-white font-bold py-4 px-6 rounded-lg text-center transition-colors duration-200 shadow-lg"
             >
               Order on Amazon
-            </Link>
+            </a>
           </div>
         </div>
       </section>
