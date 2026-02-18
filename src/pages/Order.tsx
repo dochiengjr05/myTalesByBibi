@@ -77,8 +77,8 @@ export default function Order() {
             </p>
           </div>
           
-          {/* Amazon Link */}
-          <div className="bg-white rounded-lg shadow-xl p-6">
+          {/* Order Links */}
+          <div className="bg-white rounded-lg shadow-xl p-6 space-y-4">
             <a 
               href="https://www.amazon.com/Hoofbeats-Tails-Story-Three-Siblings/dp/1990093981"
               target="_blank"
@@ -86,6 +86,22 @@ export default function Order() {
               className="block w-full bg-sunset hover:bg-sunset-dark text-white font-bold py-4 px-6 rounded-lg text-center transition-colors duration-200 shadow-lg"
             >
               Order on Amazon
+            </a>
+            <a 
+              href="https://www.walmart.com/ip/Hoofbeats-and-Tails-The-Story-of-Three-Wild-Siblings-Paperback-9781990093982/19366111222"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-[#0071ce] hover:bg-[#004c91] text-white font-bold py-4 px-6 rounded-lg text-center transition-colors duration-200 shadow-lg"
+            >
+              Order on Walmart
+            </a>
+            <a 
+              href="https://www.barnesandnoble.com/w/hoofbeats-and-tails-illustrations-hub/1149275148"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-[#2a5934] hover:bg-[#1e4026] text-white font-bold py-4 px-6 rounded-lg text-center transition-colors duration-200 shadow-lg"
+            >
+              Order on Barnes & Noble
             </a>
           </div>
         </div>
