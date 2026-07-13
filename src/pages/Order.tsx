@@ -48,17 +48,25 @@ export default function Order() {
             <div className="bg-grass-light border-l-4 border-grass p-6 rounded-lg mb-6">
               <h3 className="font-display font-bold text-earth mb-3 flex items-center">
                 <Phone className="h-5 w-5 text-sunset mr-2" />
-                M-PESA Payment
+                Lipa Na M-PESA (Paybill)
               </h3>
-              <p className="text-gray-700 mb-3">
+              <p className="text-gray-700 mb-4">
                 Make payment to place order and we will contact you within 12 hours to schedule delivery.
               </p>
-              <p className="text-gray-700 mb-2">
-                Send payment via M-PESA to:
-              </p>
-              <p className="text-2xl font-bold text-sunset mb-2">
-                0728934854
-              </p>
+              <div className="space-y-3 mb-4">
+                <div className="flex flex-col">
+                  <span className="text-sm text-gray-600">Business Number (Paybill)</span>
+                  <span className="text-2xl font-bold text-sunset">400200</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-sm text-gray-600">Account Number</span>
+                  <span className="text-2xl font-bold text-sunset">1173063</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-sm text-gray-600">Business Name</span>
+                  <span className="text-lg font-bold text-earth">TALES BY BIBI</span>
+                </div>
+              </div>
               <p className="text-sm text-gray-600">
                 Amount: KES 800 (1 copy)
               </p>
