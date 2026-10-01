@@ -19,8 +19,8 @@ const communityMoments = [
   },
   {
     src: '/images/book-donation-cbk-kibera.jpeg',
-    alt: 'Story book donation at CBK Kibera',
-    caption: 'Story book donation at CBK Kibera.',
+    alt: 'Story book donation at CBCK Kibera',
+    caption: 'Story book donation at CBCK Kibera.',
   },
   {
     src: '/images/storytelling-cbk-kibera.jpeg',
