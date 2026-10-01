@@ -5,12 +5,12 @@ const communityMoments = [
   {
     src: '/images/storytelling-kiota-school.jpeg',
     alt: 'Storytelling at Kiota School - Kindergarten',
-    caption: 'Story telling at Kiota School',
+    caption: 'Storytelling at Kiota School.',
   },
   {
     src: '/images/storytelling-makini-cambridge.jpeg',
-    alt: 'Storytelling at Makini Cambridge',
-    caption: 'Story telling at Makini Cambridge',
+    alt: 'Storytelling at Makini Cambridge School',
+    caption: 'Storytelling at Makini Cambridge School',
   },
   {
     src: '/images/donation-ombo-kware.jpeg',
@@ -19,13 +19,13 @@ const communityMoments = [
   },
   {
     src: '/images/book-donation-cbk-kibera.jpeg',
-    alt: 'Book donation to CBK Kibera',
-    caption: 'Book donation to CBK Kibera',
+    alt: 'Story book donation at CBK Kibera',
+    caption: 'Story book donation at CBK Kibera.',
   },
   {
     src: '/images/storytelling-cbk-kibera.jpeg',
     alt: 'Storytelling at CBK Kibera',
-    caption: 'Story telling at CBK Kibera',
+    caption: 'Storytelling at CBK Kibera.',
   },
 ];
 
