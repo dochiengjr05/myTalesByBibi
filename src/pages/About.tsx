@@ -24,8 +24,8 @@ const communityMoments = [
   },
   {
     src: '/images/storytelling-cbk-kibera.jpeg',
-    alt: 'Storytelling at CBK Kibera',
-    caption: 'Storytelling at CBK Kibera.',
+    alt: 'Storytelling at CBCK Kibera',
+    caption: 'Storytelling at CBCK Kibera.',
   },
 ];
 
